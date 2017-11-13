@@ -17,7 +17,7 @@ enum HttpMethod: String {
 }
 
 struct UrlRequestFactory<T: Encodable> {
-  class RequestComponents {
+  struct RequestComponents {
     let method: HttpMethod
     let server: MyServer
     let path: String
